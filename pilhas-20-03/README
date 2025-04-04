@@ -1,0 +1,74 @@
+Sistema de Navegação e Gerador de Senhas para Hospital
+
+Visão Geral
+
+Este projeto implementa dois sistemas distintos em Java:
+
+Sistema de Navegação com Pilhas: Simula a funcionalidade de avançar e voltar em um navegador web.
+
+Sistema Gerador de Senhas para Hospital: Implementa uma fila para a geração e chamada sequencial de senhas de atendimento.
+
+Funcionalidades
+
+1. Sistema de Navegação
+
+Acessar uma nova página adiciona a página atual à pilha de "Voltar" e limpa a pilha de "Avançar".
+
+O botão "Voltar" move a página atual para a pilha de "Avançar" e exibe a anterior.
+
+O botão "Avançar" move a página da pilha de "Avançar" para a pilha de "Voltar".
+
+2. Sistema Gerador de Senhas
+
+Gera senhas sequenciais.
+
+Chama a próxima senha da fila.
+
+Mantém um histórico de chamadas.
+
+Estrutura do Código
+
+O projeto está dividido em três classes principais:
+
+Navegador: Gerencia a navegação utilizando pilhas.
+
+GeradorSenhas: Gerencia a fila de senhas e o histórico.
+
+Main: Classe principal que executa testes para ambas as funcionalidades.
+
+Tecnologias Utilizadas
+
+Linguagem: Java
+
+Estruturas de dados: Stack (Pilhas) e Queue (Filas)
+
+Como Executar
+
+Clone este repositório:
+
+git clone https://github.com/rafasor/atividades-estrutura-de-dados
+
+Compile e execute o programa:
+
+javac Main.java && java Main
+
+Exemplo de Saída
+
+Página Atual: Google
+Voltar: [Página Inicial]
+Avançar: []
+---------------------------
+Página Atual: YouTube
+Voltar: [Página Inicial, Google]
+Avançar: []
+---------------------------
+Chamando senha: 1
+Chamando senha: 2
+Histórico de chamadas: [1, 2]
+
+Autor
+
+Desenvolvido por Rafael Soares Martins.
+
+
+
